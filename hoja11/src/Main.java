@@ -11,12 +11,6 @@ public class Main {
 	 * @param args .
 	 */
 	public static void main (String [] args){
-		//ClaseFrame miVentana = new ClaseFrame();
-		//miVentana.setVisible(true);           
-		//Manejador mn=new Manejador();
-		//mn.leerContenido();
-		//mn.hacergrafo();
-		GUI miVentana = new GUI();
-		miVentana.setVisible(true);     
+		
 	}
 }

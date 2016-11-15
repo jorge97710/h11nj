@@ -5,7 +5,7 @@
 
 #funcion para leer el documento de texto
 def leertxtenlista():
-    archi=open('datos.txt','r')
+    archi=open('guategrafo.txt','r')
     linea=archi.readline()  
     while linea!="":        
     #primero,segundo y tercero guardan los indices de los espacios
@@ -47,7 +47,7 @@ str=" "
 #leemos el documento y creamos el grafo
 leertxtenlista()
 print("Bienvenido al programa")
-#matriz para dar los resultados, el tamaño es la cantidad de nodos en filas y columnas
+#matriz para dar los resultados, el tamaÃ±o es la cantidad de nodos en filas y columnas
 distancia = [[0 for i in xrange(len(g))] for i in xrange(len(g))]
 #se aplica el algoritmo 
 predecesor, distance = nx.floyd_warshall_predecessor_and_distance(g)

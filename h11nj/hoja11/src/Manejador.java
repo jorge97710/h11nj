@@ -65,6 +65,20 @@ public class Manejador {
 		 }
 		 fw.mostrarIntermedias(origen, destino);
 		 String cen = fw.centroGrafo();
+		int vi=8;
+		 System.out.println("The adjacency matrix for the given graph is: ");
+	        System.out.print("  ");
+	        for (int i = 0; i < vi; i++)
+	            System.out.print(i + " ");
+	        System.out.println();
+	        for (int i = 0; i < vi; i++) 
+	        {
+	        	//System.out.print(fw.g.get(i).getName()  + " ");
+	        	System.out.print(i + " ");
+	            for (int j = 0; j < vi; j++) 
+	                System.out.print(fw.getEdge(i, j) + " ");
+	            System.out.println();
+	        }
 		 return "El peso de: "+o+" a: "+ d+ "es: "+a +" y la ruta es: "+v[origen].getName()+ fw.inter+"--> "+ v[ destino].getName()+ " y el centro "
 		 		+ "es: "+cen;
 	 }
